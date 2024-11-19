@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.navbar-heading {
+    color: #ffffff;
+    font-family: Playfair display;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.link-text {
+    font-family: Playfair display SC;
+
+}
+
+.hair-salon-landpage {
+    background-image: url("https://res.cloudinary.com/duzdvmd5d/image/upload/v1730023169/jxyx0gxk_umppcb.png");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100vw;
+}
+
+@media (min-width: 1200px) {
+    .hair-salon-landpage {
+        height: 100vh;
+    }
+}
+
+.landpage-head {
+    color: #ffffff;
+    font-size: 59px;
+    font-family: Playfair display SC;
+    font-weight: bold;
+}
+
+.landpage-discription {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+.custom-button {
+    color: white;
+    font-family: Playfair display SC;
+    font-size: 13px;
+    font-weight: bold;
+    background-image: linear-gradient(#616672, #121316, #616672);
+    width: 134px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 9px;
+    margin-top: 10px;
+}
+
+.about-section-bg {
+    background-color: white;
+    padding: 40px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.about-section-heading {
+    color: black;
+    font-family: Playfair display SC;
+    font-size: 30px;
+}
+
+.line {
+    background-color: black;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.about-section-description {
+    color: grey;
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+.highlightt {
+    color: black;
+    font-family: Playfair display SC;
+    font-weight: 700;
+}
+
+.salon-image {
+    border-radius: 10px;
+    height: 65%;
+}
+
+.service-section-head {
+    font-family: Playfair display SC;
+}
+
+.read-more-button {
+    color: white;
+    font-family: Playfair display SC;
+    font-size: 10px;
+    font-weight: bold;
+    background-image: linear-gradient(#ffffff, #616672, #ffffff);
+    width: 124px;
+    height: 35px;
+    border-width: 0;
+    border-radius: 9px;
+    margin-top: 10px;
+    padding-top: 7px;
+    margin-left: 5px;
+}
+
+.headingg {
+    font-family: Playfair display;
+    font-weight: bold;
+}
+
+
+.mc-testimonials-section {
+    background-image: linear-gradient(black, #D3D3D3, #505050);
+    width: 100%;
+    background-size: cover;
+    padding: 30px;
+}
+
+.carousel-image {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.carousel-bg-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.second-heading {
+    font-size: 31px;
+    color: #ffffff;
+    font-family: "Playfair display SC";
+    padding: 10px;
+}
+
+.feedback-text {
+    color: black;
+}
+
+.information {
+    color: grey;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+
+
+.book-now-bg {
+    background-image: linear-gradient(black, #D3D3D3, white);
+    width: 100vw;
+    background-size: cover;
+}
+
+.book-now-head {
+    color: white;
+    font-family: Playfair display;
+    font-size: 30px;
+}
+
+.client-data {
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+.book-now-button {
+    color: white;
+    font-family: Playfair display SC;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: black;
+    width: 134px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.payment-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 28px;
+}
+
+.contact-section-bg-container {
+    background-image: linear-gradient(#505050, black, black, black);
+    background-size: cover;
+}
+
+.manecraft-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+
+.name {
+    color: white;
+    font-size: 23px;
+    font-family: "Playfair display SC";
+    font-weight: 700;
+}
+
+.description {
+    color: #9aa5b1;
+    font-size: 13px;
+}
+
+.conctact-icon {
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.bottom-section {
+    background-image: linear-gradient(#505050, black);
+    padding-top: 10px;
+}
