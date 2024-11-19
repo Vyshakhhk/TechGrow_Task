@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.sidebar {
+    background-color: #030005;
+    padding-top: 20px;
+    height: 91vh;
+}
+
+.love-icon-style {
+    background-image: linear-gradient(to right bottom, #4e0a8a, #9736cf, #add9d3);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    align-items: center;
+}
+
+
+.navbar {
+    background-color: #1DB954;
+}
+
+
+.sidebar .nav-link {
+    color: #b3b3b3;
+}
+
+.sidebar .nav-link.active {
+    color: #1DB954;
+}
+
+.sidebar-heading {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+}
+
+.playlist-image {
+    width: 30%;
+    padding-right: 10px;
+}
+
+.spotify {
+    color: white;
+}
+
+.main-icon {
+    color: white;
+
+}
+
+.main-text {
+    color: white;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.navbar-textt {
+    font-family: Arial;
+    font-size: 13px;
+    color: #b2b2b2;
+}
+
+.navbar-update {
+    background-color: #181716;
+    height: 70px;
+}
+
+.spotify-clone-bg {
+    background-image: linear-gradient(to bottom right, #38761d, #274e13, black, black, black, black);
+    background-size: cover;
+}
+
+.main-ui-text {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 800;
+    font-family: Roboto;
+}
+
+.custom-icon {
+    color: white;
+    font-size: 22px;
+}
+
+.song-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 95%;
+    height: 70%;
+}
+
+.song-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.song-image {
+    width: 38%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.song-name {
+    font-family: Roboto;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navigation-buttons {
+    display: flex;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+.nav-button {
+    color: white;
+    font-size: 16px;
+}
+
+
+.song-mix-card {
+    padding: 15px;
+    margin: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.song-mix-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.song-mix-card-image {
+    width: 100%;
+}
+
+.sm-card-text {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial;
+
+}
+
+.lower-name {
+    color: grey;
+    font-size: 11px;
+}
+
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: black;
+}
+
+.controls i {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+}
+
+input[type="range"]::-moz-range-thumb ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #777;
+    height: 3px;
+    border-radius: 5px;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
