@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator by vk</title>
+
+    <script src="https://kit.fontawesome.com/6faacee1fc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="hero-section text-center text-white">
+        <div class="container">
+            <h1 class="display-4">Quote Generator to Get Unique Quotes in Seconds</h1>
+            <p class="lead">
+                Looking for the perfect quote? Our Quote Generator provides a seamless experience in getting quotes that resonate and inspire.
+            </p>
+
+            <div class="container col-md-7 col-12 mt-5 pt-5 align-items-center ">
+                <div class="quote-box shadow-lg p-5 rounded">
+                    <blockquote id="quoteText" class="blockquote text-center text-dark">
+                        "Click the button to generate a new quote!"
+                    </blockquote>
+                    <!-- Quote Author -->
+                    <footer id="quoteAuthor" class="blockquote-footer text-right">
+                        - Author
+                    </footer>
+                    <!-- Generate Button -->
+                    <div class="text-center mt-4">
+                        <button id="newQuote" class="btn btn-lg px-4 py-2">Generate Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const quotes = [{
+                        text: "The best way to predict the future is to create it.",
+                        author: "Peter Drucker"
+                    },
+                    {
+                        text: "Do what you can, with what you have, where you are.",
+                        author: "Theodore Roosevelt"
+                    },
+                    {
+                        text: "Success usually comes to those who are too busy to be looking for it.",
+                        author: "Henry David Thoreau"
+                    },
+                    {
+                        text: "Don’t wait. The time will never be just right.",
+                        author: "Napoleon Hill"
+                    },
+                    {
+                        text: "In the middle of every difficulty lies opportunity.",
+                        author: "Albert Einstein"
+                    }
+                ];
+
+                document.getElementById("newQuote").addEventListener("click", function() {
+                    const randomIndex = Math.floor(Math.random() * quotes.length);
+                    const selectedQuote = quotes[randomIndex];
+
+                    // Add fade-out effect
+                    const quoteText = document.getElementById("quoteText");
+                    const quoteAuthor = document.getElementById("quoteAuthor");
+                    quoteText.classList.add("fade-out");
+                    quoteAuthor.classList.add("fade-out");
+
+                    setTimeout(() => {
+                        // Update text after fade-out
+                        quoteText.innerText = `"${selectedQuote.text}"`;
+                        quoteAuthor.innerText = `- ${selectedQuote.author}`;
+
+                        // Remove fade-out and add fade-in effect
+                        quoteText.classList.remove("fade-out");
+                        quoteAuthor.classList.remove("fade-out");
+                        quoteText.classList.add("fade-in");
+                        quoteAuthor.classList.add("fade-in");
+                    }, 400);
+                });
+            </script>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <main class="content-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Image -->
+                <div class="col-md-6 text-center">
+                    <img src="https://res.cloudinary.com/duzdvmd5d/image/upload/c_fill,w_1000,h_1000/v1732176862/9216a6d77f0b5e87c692674d4d16a710_jmlrex.jpg" alt="Quote" class="img-fluid rounded">
+                </div>
+                <!-- Right Content -->
+                <div class="col-md-6">
+                    <h3 class="mb-4">The Future of Quote Creation</h3>
+                    <ul class="list-unstyled">
+                        <li><strong>Embracing AI Quotes:</strong> Using AI, our tool produces quotes that resonate with contemporary themes and ideas.</li>
+                        <li><strong>Impact on Literary Creativity:</strong> Offering fresh perspectives to enrich the literary landscape.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-5">
+                <!-- Left Content -->
+                <div class="col-md-6">
+                    <h3 class="mb-4">Generate Quotes in Seconds</h3>
+                    <ul class="list-unstyled">
+                        <li><strong>Real-Time Quote Generation:</strong> Generate personalized quotes quickly with quality content.</li>
+                        <li><strong>Completely Unique:</strong> Tailored quotes align perfectly with your preferences.</li>
+                    </ul>
+                </div>
+                <!-- Right Image -->
+                <div class="col-md-6 text-center mb-5">
+                    <img src="https://res.cloudinary.com/duzdvmd5d/image/upload/c_fill,w_1000,h_1000/v1732176879/30d7eeb1802440a7e1fcf65c78185433_y1m2uy.jpg" alt="Quote" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="footer bg-black text-white py-4 modification">
+            <div class="container">
+                <div class="row">
+                    <!-- App Download Buttons -->
+                    <div class="col-md-4 text-center mb-3">
+                        <p class="mb-3 fw-bold">Quote Generator</p>
+                        <a href="#" class=" btn btn-f btn-light btn-sm me-2 mb-2">Download on the App Store</a>
+                        <a href="#" class=" btn btn-f btn-light btn-sm">Get it on Google Play</a>
+                    </div>
+                    <!-- Free Tools -->
+                    <div class="col-md-2 col-3 d-none d-md-block">
+                        <h6 class="fw-bold">Free Tools</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Quote Generator</a></li>
+                            <li><a href="#" class="text-white">Everyday Quotes</a></li>
+                            <li><a href="#" class="text-white">Quote Generator</a></li>
+                            <li><a href="#" class="text-white">Insipiration Quotes</a></li>
+                        </ul>
+                    </div>
+                    <!-- Size Guides -->
+                    <div class="col-md-2 col-3 d-none d-md-block">
+                        <h6 class="fw-bold">Size Guides</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Instagram</a></li>
+                            <li><a href="#" class="text-white">Facebook</a></li>
+                            <li><a href="#" class="text-white">YouTube</a></li>
+                            <li><a href="#" class="text-white">TikTok</a></li>
+                            <li><a href="#" class="text-white">X (Twitter)</a></li>
+                            <li><a href="#" class="text-white">Pinterest</a></li>
+                            <li><a href="#" class="text-white">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <!-- Company -->
+                    <div class="col-md-2 col-3 d-none d-md-block">
+                        <h6 class="fw-bold">Company</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Pricing</a></li>
+                            <li><a href="#" class="text-white">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                    <!-- Legal -->
+                    <div class="col-md-2 col-3 d-none d-md-block">
+                        <h6 class="fw-bold">Legal</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Terms of Use</a></li>
+                            <li><a href="#" class="text-white">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white">Affiliate Agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col text-center">
+                        <p class="small">&copy; 2024 Quote Generator, Inc. All rights reserved.</p>
+                        <div>
+                            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.hero-section {
+    background-image: linear-gradient(rgba(245, 245, 220, 0.0), rgba(0, 0, 0, 0.0)), url('https://res.cloudinary.com/duzdvmd5d/image/upload/c_fill,ar_4:3,g_auto/v1732178358/f6c37190925923a040d406802717b963_m94cf4.jpg');
+    color: #fff;
+    background-size: cover;
+    padding: 100px 20px;
+}
+
+.hero-section h1 {
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.quote-form .form-control {
+    border-radius: 50px;
+}
+
+.content-section h3 {
+    font-weight: bold;
+}
+
+.content-section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .content-section img {
+        margin-top: 20px;
+    }
+}
+
+
+.quote-box {
+    background-image: linear-gradient(#FFFDD0, #dbc1ac, #dbc1ac, #967259, #634832);
+    border-radius: 15px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    animation: slide-in 0.5s ease-out;
+}
+
+.blockquote {
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+.blockquote-footer {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #5a3107;
+}
+
+.btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    border-width: 0px;
+    background-color: black;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #38220f;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.footer a:hover {
+    text-decoration: underline;
+
+}
+
+.footer .btn {
+    border-radius: 25px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.modification {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.btn-f {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    border-width: 0px;
+    background-color: black;
+    color: #fff;
+}
+
+.btn-f:hover {
+    background-color: grey;
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.05);
+}
